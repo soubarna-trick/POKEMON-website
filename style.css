@@ -1,0 +1,466 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*background-image: url('background.png');	*/
+	font-family: 'Kaushan Script', cursive;
+}
+
+body{
+	background-image: url('background.png');
+	bacground filter: blur(5px);
+	/*position: sticky;*/
+	background-repeat: none;
+	background-size: cover;
+}
+
+
+
+
+
+
+/**********logo*********/
+
+
+
+
+.logo{
+	width: 100%;
+	height: 120px;
+	background-color: rgba(0, 0, 5, 0.8 );
+	z-index: 2;
+}
+.logo img{
+   height: 120px;
+   filter: drop-shadow(10px 0px 10px yellowgreen);
+   animation: blink 1s infinite linear;
+}
+@keyframes blink{
+		0%{filter: drop-shadow(10px 10px 10px yellowgreen);};
+		35%{filter: drop-shadow(10px 10px 10px yellowgreen);};
+		75%{filter: drop-shadow(10px 10px 10px yellow);}
+
+}
+
+
+
+
+/********NAVIGATION************/
+
+
+
+nav{
+	width: 100%;
+	height: 80px;
+	position: sticky;
+	background-color: rgba(0, 0, 5, 0.8 );
+	/*z-index: -1;*/
+}
+
+nav p{
+	text-align: center;
+}
+
+nav img{
+	width: 150px;
+	height: 60px;	
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px;
+
+
+}
+
+nav ul li{
+	list-style: none;
+	border: 2px solid black;
+	width: 180px;
+	padding: 10px;
+	background-image: linear-gradient(180deg, black, yellow);
+	opacity: 0.5;
+	/*margin: 10px;*/
+	border-radius: 10px 50px 10px 50px;
+	box-shadow: 2px 5px 10px 1px yellowgreen;
+}
+
+nav ul li:hover{
+	list-style: none;
+	border: 2px solid black;
+	width: 180px;
+	padding: 10px;
+	background-image: linear-gradient(180deg, yellow, black);
+	opacity: 1;
+	/*margin: 10px;*/
+	border-radius: 10px 50px 10px 50px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.menu{
+	padding-left: 50px;
+}
+.menu:hover{
+	padding-left: 50px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-weight: bolder;
+	font-color: BLACK;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+/*LANDING IMAGE*/
+
+header{
+	width: 95%;
+	height: 100%;
+	background-color: rgba(0, 0, 5, 0.5);
+	display: flex;
+	justify-content: space-around;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 30px;
+	border-radius: 10px 50px 10px 50px;
+	box-shadow: 2px 1px 10px 5px yellow;
+}
+
+
+
+
+
+/*//slider*/
+
+
+
+
+header .left{
+	width: 60%;
+	height: 420px;
+	background-image: url('pokemon1.jpg');
+	background-size: cover;
+	animation: slider 9s infinite linear;
+	box-shadow: 2px 1px 10px 5px yellow;
+	border-radius: 10px 50px 10px 50px;
+
+} 
+@keyframes slider{
+	0%{background-image: url('pokemon2.jpg');  }
+	35%{ background-image: url('pokemon1.jpg'); }
+	75%{ background-image: url('pokemon2.jpg');  }
+}
+
+/*slider*/
+
+header .right {
+	width: 25%;
+	height: 400px;
+	/*margin-top: 10px;*/
+}
+
+header .right .up{
+	width: 350;
+	height: 200px;
+	background-image: linear-gradient(180deg ,black,yellowgreen,black);
+	box-shadow: 2px 1px 10px 5px yellow;
+	border-radius: 10px 50px 10px 50px;
+}
+.up img
+{
+	height: 75%;
+	width: 200px;
+	transform: translate(50px);
+	filter: drop-shadow(5px 5px 5px black);
+}
+
+.up p {
+	text-align: center;
+}
+
+.up button
+{
+	padding: 3px;
+	width: 170px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	box-shadow: 2px 1px 10px 5px yellowgreen;
+	background-image: linear-gradient(180deg, yellowgreen,black);
+	border-radius: 30px;
+	text-shadow: 2px 2px 8px yellowgreen;
+}
+.up button:hover
+{
+	padding: 3px;
+	width: 170px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	box-shadow: 2px 1px 10px 5px black;
+	color: white;
+	background-image: linear-gradient(180deg ,yellowgreen,black,yellowgreen);
+	border-radius: 30px;
+}
+
+
+
+header .right .down{
+	width: 350;
+	height: 200px;
+	background-image: linear-gradient(180deg ,black,yellowgreen,black);
+	margin-top: 20px;
+	box-shadow: 2px 1px 10px 5px yellow;
+	border-radius: 10px 50px 10px 50px;
+}
+
+.down img
+{
+	padding-top: 20px;
+	height: 150px;
+	width: 200px;
+	/*transform: translate(50px);*/
+	filter: drop-shadow(5px 5px 5px black);
+}
+
+.down p 
+{
+	text-align: center;
+}
+
+.down button
+{
+	padding: 3px;
+	width: 170px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	box-shadow: 2px 1px 10px 5px yellowgreen;
+	background-image: linear-gradient(180deg, yellowgreen,black);
+	border-radius: 30px;
+	text-shadow: 2px 2px 8px yellowgreen;
+}
+.down button:hover
+{
+	padding: 3px;
+	width: 170px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	box-shadow: 2px 1px 10px 5px black;
+	color: white;
+	background-image: linear-gradient(180deg ,yellowgreen,black,yellowgreen);
+	border-radius: 30px;
+}
+
+
+/*********CARDS*********/
+
+
+section{
+
+	width: 95%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 30px;
+	margin: 30px;
+	padding-bottom: 30px;
+	margin-top: 30px;
+	background-color: rgba(0, 0, 5, 0.5);
+	border-radius: 10px 50px 10px 50px;
+	box-shadow: 2px 1px 10px 5px yellow;
+}
+
+.c1{
+	width: 20%; height: 180px;
+	background-color: rgba(0, 0, 5, 0.5);
+	position: relative;
+	border-radius: 30px;
+	box-shadow: 2px 5px 10px 1px yellow;
+} 
+
+.c1 p{
+	text-align: center;
+	font-color: white;
+}
+.c1 img{
+	/*position: absolute;*/
+	width: 150px;
+	height: 120px;
+	margin-right: 20PX;
+	/*margin-top: 10px;*/
+	filter: drop-shadow(10px 10px 10px yellowgreen);
+}
+
+
+.c1 button{
+	margin-top: 10px;
+	padding: 5px;
+	width: 150px;
+	border-radius: 20px;
+	background-image: linear-gradient(180deg, black, yellow);
+	opacity: 0.5;
+	box-shadow: 2px 1px 10px 5px yellow;
+}
+
+
+.c1 button:hover{
+	margin-top: 10px;
+	padding: 5px;
+	width: 150px;
+	border-radius: 20px;
+	background-image: linear-gradient(180deg, yellow, black);
+	opacity: 1;
+	box-shadow: 2px 1px 10px 5px yellow;
+}
+
+.c1 b{
+	color: black;
+}
+
+
+
+/*SPECIAL PRODUCT*/
+
+.spcl{
+	width: 95%;
+	height: 100%;
+	background-color: rgba(0, 0, 5, 0.5);
+	/*padding: 30px;*/
+	margin: 30px;
+	padding: 30px;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 30px;
+	border-radius: 10px 50px 10px 50px;
+	box-shadow: 2px 1px 10px 5px yellow;
+}
+
+.spcl .llogo{
+	width: 50%;
+	height: 200px;
+
+}
+
+.llogo img{
+	width: 80%;
+	height: 400px;
+	filter: drop-shadow(5px 5px 5px yellow);
+	animation: blink 1s infinite linear;
+}
+
+
+@keyframes blink{
+	0%{filter: drop-shadow(5px 5px 5px yellowgreen);}
+	35%{filter: drop-shadow(5px 5px 5px black); }
+	75%{filter: drop-shadow(5px 5px 5px white); }
+}
+
+
+.rl{
+	padding-top: 50px;
+	width: 50%;
+}
+
+.rl h3{
+	font-weight: bolder;
+	color: whitesmoke;
+	font-size: 25px;
+	letter-spacing: 0.8rem;
+	/*margin-bottom: 20px;*/
+	/*text-decoration: underline;*/
+	text-shadow: 2px 2px 8px yellow;
+	/*text-decoration: underline;*/
+}
+
+
+
+.rl p{
+	border-radius: 50px;
+	margin-top: 80px;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	text-align: left;
+	font-weight: bolder;
+	color: white;
+	text-shadow: 2px 2px 8px yellow;
+
+}
+
+
+.rl button{
+	padding: 9px;
+	width: 160px;
+	height: 50px;
+	border-radius: 30px;
+	box-shadow: 2px 1px 10px 5px yellow;
+	margin-top: 80px;
+	background-image: linear-gradient(180deg, yellowgreen,black);
+	animation: butt 1sec infinite linear;
+	font-color: yellow;
+}
+
+
+.rl button h4{
+	color: yellow;
+	text-shadow: 2px 2px 8px yellowgreen;
+}
+
+
+
+
+/*************GALLARY***********/
+
+
+.gallary{
+	width: 95%%;
+	height: 100%;
+	background-color: green;
+	padding: 30px;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	border-radius: 10px 50px 10px 50px;
+	background-color: rgba(0, 0, 5, 0.5);
+	box-shadow: 2px 1px 10px 5px yellow;
+}
+
+.gallary .gallary1{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.g1{
+	width: 20%;
+	height: 180px;
+	background-color: black;
+	border-radius: 10px 50px 10px 50px;
+	box-shadow: 2px 1px 10px 5px yellow;
+}
+
+.g1 img{
+	width: 100%;
+	height: 180px;
+	background-color: black;
+	border-radius: 10px 50px 10px 50px;	
+}
+
+.gallary2 , .gallary3{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	padding-top: 30px;
+
+	justify-content: space-around;
+}
